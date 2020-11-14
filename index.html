@@ -1,0 +1,114 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Hangman Game</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Contents of the Home Page -->
+        <header>
+            <h1 id="welcome">
+                WELCOME TO THE HANGMAN GAME
+            </h1>
+        </header>
+        <div class="category-container">
+            <div class="category" id="movies"> 
+                <p>Movies</p>
+            </div>
+            <div class="category" id="tv">
+                <p>TV Shows</p>
+            </div>
+            <div class="category" id="sportsteams">
+                <p>Sports Teams</p>
+            </div>
+            <div class="category" id="celebrities">
+                <p>Celebrities</p>
+            </div>
+            <div class="category" id="cities">
+                <p>Famous Cities</p>
+            </div>
+            <div class="category" id="animals">
+                <p>Animals</p>
+            </div>
+            <div class="category" id="food">
+                <p>Famous Food</p>
+            </div>
+            <div class="category" id="videogames">
+                <p>Video Games</p>
+            </div>
+            <div class="category" id="music">
+                <p>Music</p>
+            </div>
+        </div>
+
+        <!-- The back button -->
+        <div class="back">
+            BACK <i class="fa fa-angle-double-left"></i>
+        </div>
+
+        <!-- The selected genre is displayed inside the div after the user selects a category -->
+        <div class="selectedgenre">
+            
+        </div>
+
+        <!-- choice of letters -->
+        <div class="letter-options">
+            <div class="letters" id="A">A</div>
+            <div class="letters" id="B">B</div>
+            <div class="letters" id="C">C</div>
+            <div class="letters" id="D">D</div>
+            <div class="letters" id="E">E</div>
+            <div class="letters" id="F">F</div>
+            <div class="letters" id="G">G</div>
+            <div class="letters" id="H">H</div>
+            <div class="letters" id="I">I</div>
+            <div class="letters" id="J">J</div>
+            <div class="letters" id="K">K</div>
+            <div class="letters" id="L">L</div>
+            <div class="letters" id="M">M</div>
+            <div class="letters" id="N">N</div>
+            <div class="letters" id="O">O</div>
+            <div class="letters" id="P">P</div>
+            <div class="letters" id="Q">Q</div>
+            <div class="letters" id="R">R</div>
+            <div class="letters" id="S">S</div>
+            <div class="letters" id="T">T</div>
+            <div class="letters" id="U">U</div>
+            <div class="letters" id="V">V</div>
+            <div class="letters" id="W">W</div>
+            <div class="letters" id="X">X</div>
+            <div class="letters" id="Y">Y</div>
+            <div class="letters" id="Z">Z</div>
+        </div>
+
+        <!-- div where correctly guessed characters are displayed -->
+        <div class="guessed-word">
+            
+        </div>
+
+        <div class="try-again-box">
+            <p>TRY AGAIN</p>
+        </div>
+
+        <div class="lives-box">
+            <p>LIVES: <span id="lives">10</span></p>
+        </div>
+        
+        <div class="endscreen">
+            <p id="endscreen-msg">YOU DID IT! PLAY ONE MORE TIME? OR GO BACK TO THE HOME SCREEN(CLICK ON THE RESET BUTTON)</p>
+            <p id="reset">RESET</p>
+        </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

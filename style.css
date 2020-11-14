@@ -1,0 +1,212 @@
+body{
+    margin:0px;
+    background: url("images/bg-image.jpg" ) center center fixed, grey ;
+    background-size:cover;
+    position: relative;
+}
+
+.container{
+    width:100%;
+    height:608px;
+}
+
+/* -------------HOME PAGE STYLING--------------- */
+
+/* Game Title */
+#welcome{
+    margin:30px 10%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:50px;
+    color:#d6131a;
+}
+
+/* div containing all categories */
+.category-container{
+    width:80%;
+    height:430px;
+    position: absolute;
+    left:10%;
+    padding:0px;
+}
+
+/* category boxes */
+.category{
+    width:28%;
+    height:120px;
+    float:left;
+    margin-left:4%;
+    margin-bottom: 23px;
+    background-color: black;
+    opacity: 0.7;
+    cursor:p
+}
+
+.category p{
+    color:white;
+    text-align: center;
+    margin-top: 40px;
+    font-size:25px;
+    cursor: pointer;
+}
+
+.category p:hover{
+    color:purple;
+    font-size:27px;
+}
+
+/* -------------GAME PAGE STYLING--------------- */
+
+/* back button */
+.back{
+    position: absolute;
+    width:9%;
+    height:35px;
+    top:10px;
+    left:2%;
+    color:white;
+    font-size:25px;
+    font-weight:bold;
+    text-align: center;
+    background-color:blue;
+    padding-top:3px;
+    cursor:pointer;
+    display:none; 
+}
+
+.back:hover{
+    font-size:27px;
+}
+
+/* selected genre displayed on the top of the game page */
+.selectedgenre{
+    position: absolute;
+    font-size:50px;
+    top:30px;
+    left:37%;
+    text-decoration: overline;
+    display:none;
+}
+
+/* div containing letter boxes */
+.letter-options{
+    position: absolute;
+    left:10%;
+    top:120px;
+    cursor: pointer;
+    display: none;
+}
+
+/* letter boxes displaying choice of letters */
+.letters{
+    border:1px solid white;
+    float:left;
+    padding:10px;
+    font-size:25px;
+    color:white;
+    background-color: black;
+}
+
+.letters:hover{
+    /* !important is used to overide style implemented by the JavaScript code */
+    border:1px solid black !important;
+    background-color:white !important;
+    color:black !important; 
+}
+
+/* div containing boxes that hold letters after they are guessed  */
+.guessed-word{
+    position: absolute;
+    width:75%;
+    height:auto;
+    top:270px;
+    left:12%;
+    display: none;
+}
+
+/* the boxes that hold the letters after they're guessed */
+.guessed-word-box{
+    width:35px;
+    height:50px;
+    border:1px solid black;
+    font-size:45px;
+    padding:15px;
+    font-weight: bolder;
+    background-color:white;
+    float:left;
+}
+
+/* Try again button */
+.try-again-box{
+    width:17%;
+    height:100px;
+    position: absolute;
+    top:470px;
+    left:20%;
+    background-color: #330066 ;
+    opacity:0.8;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+
+.try-again-box p{
+    color:white;
+    font-size: 30px;
+}
+
+.try-again-box p:hover{
+    font-size:31px;
+}
+
+/* Lives left */
+.lives-box{
+    width:17%;
+    height:100px;
+    position: absolute;
+    top:470px;
+    left:60%;
+    background:black ;
+    opacity: 0.6;
+    color:white;
+    font-size:30px;
+    text-align:center;
+    display:none;
+}
+
+#lives{
+    color:yellow;
+}
+
+/* the game's result popup */
+.endscreen{
+    width:40%;
+    height:300px;
+    border:1px solid black;
+    position: absolute;
+    top:150px;
+    left:30%;
+    background-color:black;
+    opacity:0.8;
+    padding:20px 40px;
+    display: none;
+}
+
+#endscreen-msg{
+    color:yellow;
+    text-align: center;
+    font-size:35px;
+    font-weight:bolder;
+}
+
+#reset{
+    color:white;
+    text-align: center;
+    font-size:32px;
+    background-color:red;
+    cursor: pointer;
+}
+
+#reset:hover{
+    font-size:34px;
+}
